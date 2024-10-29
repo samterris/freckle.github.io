@@ -24,14 +24,13 @@
 
         img {
             width: 150px; /* Adjust size as needed */
-            animation: jiggle 0.5s ease-in-out 3; /* Jiggle on load */
+            animation: spin 1.5s ease-in-out 1; /* Faster spin on load */
         }
 
-        /* Keyframes for the jiggle animation */
-        @keyframes jiggle {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            75% { transform: translateX(5px); }
+        /* Keyframes for the spin animation */
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
