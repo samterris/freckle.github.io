@@ -24,13 +24,14 @@
 
         img {
             width: 150px; /* Adjust size as needed */
-            animation: cornerJiggle 0.2s ease-in-out 1; /* Single, quick corner jiggle on load */
+            animation: cornerJiggle 0.3s ease-in-out 1; /* Two quick bounces on load */
         }
 
-        /* Keyframes for the minimal corner jiggle animation */
+        /* Keyframes for the two-bounce corner jiggle animation */
         @keyframes cornerJiggle {
             0%, 100% { transform: rotate(0deg); } /* Start and end straight */
-            50% { transform: rotate(8deg); } /* Tilt slightly to one side */
+            30% { transform: rotate(10deg); } /* First bounce to one side */
+            60% { transform: rotate(-10deg); } /* Second bounce to the other side */
         }
     </style>
 </head>
