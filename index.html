@@ -24,6 +24,13 @@
 
         img {
             width: 150px; /* Adjust size as needed */
+            animation: spin 2s ease-in-out 1; /* Spin once on load */
+        }
+
+        /* Keyframes for the spin animation */
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
