@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freckle</title>
-    <link rel="icon" href="https://freckle.github.io/preview.png" type="image/png">
+    <link rel="icon" href="https://freckle.tech/frecklelogo.png" type="image/png">
     
     <!-- Social Media Preview -->
     <meta property="og:title" content="Freckle">
     <meta property="og:description" content="Freckle - Coming Soon">
-    <meta property="og:image" content="https://freckle.github.io/preview.png">
+    <meta property="og:image" content="https://freckle.tech/frecklelogo.png">
     <meta property="og:url" content="https://freckle.tech">
     <meta name="twitter:card" content="summary_large_image">
     
@@ -20,15 +20,24 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: ##ffffff; /* white background */
         }
 
         img {
             width: 150px; /* Adjust size as needed */
+            animation: cornerJiggle 0.3s ease-in-out 1; /* Two quick bounces on load */
+        }
+
+        /* Keyframes for the two-bounce corner jiggle animation */
+        @keyframes cornerJiggle {
+            0%, 100% { transform: rotate(0deg); } /* Start and end straight */
+            30% { transform: rotate(10deg); } /* First bounce to one side */
+            60% { transform: rotate(-10deg); } /* Second bounce to the other side */
         }
     </style>
 </head>
 <body>
     <!-- Logo Image in Center of the Page -->
-    <img src="https://freckle.github.io/preview.png" alt="Freckle Logo">
+    <img src="https://freckle.tech/frecklelogo.png" alt="Freckle Logo">
 </body>
 </html>
