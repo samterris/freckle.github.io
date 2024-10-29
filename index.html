@@ -24,14 +24,13 @@
 
         img {
             width: 150px; /* Adjust size as needed */
-            animation: cornerJiggle 0.3s ease-in-out 2; /* Quick, simplified corner jiggle on load */
+            animation: cornerJiggle 0.2s ease-in-out 1; /* Single, quick corner jiggle on load */
         }
 
-        /* Keyframes for the simplified corner jiggle animation */
+        /* Keyframes for the minimal corner jiggle animation */
         @keyframes cornerJiggle {
             0%, 100% { transform: rotate(0deg); } /* Start and end straight */
-            25% { transform: rotate(10deg); } /* Tilt one way */
-            50% { transform: rotate(-10deg); } /* Tilt opposite way */
+            50% { transform: rotate(8deg); } /* Tilt slightly to one side */
         }
     </style>
 </head>
