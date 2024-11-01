@@ -39,20 +39,4 @@
 <body>
     <!-- Logo Image in Center of the Page -->
     <img src="https://freckle.tech/frecklelogo.png" alt="Freckle Logo">
-    
-       <script>
-        // Select the logo element
-        const logo = document.getElementById('logo');
-
-        // Add a click event listener to trigger the jiggle animation
-        logo.addEventListener('click', () => {
-            logo.classList.add('jiggle');
-            
-            // Remove the jiggle class after the animation completes
-            setTimeout(() => {
-                logo.classList.remove('jiggle');
-            }, 500); // 500ms matches the animation duration
-        });
-    </script>
-</body>
 </html>
